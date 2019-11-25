@@ -10,17 +10,59 @@
     <script src="https://kit.fontawesome.com/2eec168e29.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="main">
-        <div id="nav-div">
-            <nav id="navbar">
-                <a href="#" id="bars"><i class="fas fa-bars"></i></a>
-                <a href="#"><img src="img/youtube-logo.jpeg" class="logo"></a>
-                <input type="text" placeholder="Search">
-                <button><i class="fas fa-search"></i></i></button>
-                <i class="fas fa-upload"></i>
-                <button id="sign-in">Sign in</button>
-            </nav>
+    <header>
+        <a href="#"><img id="hamburger-icon" src="img/hamburger-icon.jpg" alt="Hamburger Menu"></a>
+
+        <a href="#"><img id="youtube-logo" src="img/youtube-logo.jpeg" alt="YouTube Logo"></a>
+        <div class = "searchbox">
+            <input class = "searchbar" type="text" placeholder="Search">
+            <button id="search-button" ><img id="search-icon" src="img/search-icon.png" alt="Search Icon"></button>
         </div>
-    </div>
+        <button class="button-icons"><img id="upload-video-icon" src="img/upload-video-icon.png" alt="Upload Video"></button>
+        <button class="button-icons"><img id="grid-icon" src="img/grid-icon.png" alt="Grid"></button>
+        <button class="button-icons"><img id="more-icon" src="img/more-icon.png" alt="More"></button>
+        <button id="sign-in-button">
+            <img id="sign-in-icon" src="img/sign-in-icon.png" alt="Sign In">
+            <p id="sign-in-text" >Sign In</p>
+        </button>
+    </header>
+    <main>
+        <section class = "main-content">
+                <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/Ghrs4cPVv_Y" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+                </iframe>
+                <div class="title-section">
+                    <h1 id="video-title">Random Videos #3</h1>
+                    <div id="stats">
+                        <h4>921,570 views &middot; 26 Nov 2018</h4>
+                        <button class="video-buttons">
+                            <img class="react-buttons" src="img/thumbs-up-icon.png" alt="Like">
+                            <h4>22K</h4>
+                        </button>
+                        <button class="video-buttons">
+                            <img src="img/thumbs-down-icon.png" alt="Dislike">
+                            <h6>643</h6>
+                        </button>
+                        <button class="video-buttons">
+                            <img src="img/share-button.png" alt="Share">
+                            <h6>SHARE</h6> 
+                        </button>
+                        <button class="video-buttons">
+                            <img src="img/save-icon.png" alt="Save">
+                            <h6>SAVE</h6>
+                        </button>
+                        <img src="img/options-icon.png" alt="Options">
+                    </div>
+                </div>
+        </section>
+        <aside class="aside-content" >
+
+        </aside>
+    </main>
 </body>
 </html>

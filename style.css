@@ -7,33 +7,179 @@
 body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.8; 
+}
+h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
 }
 
-#main {
-    display: grid;
+h4 {
+    font-size: 1.4rem;
+    color: #606060;
 }
 
-#navbar {
+button {
+    box-sizing: border-box;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img {
+    float: left;
+}
+
+#hamburger-icon {
+    height: 25px;
+    width: 25px;
+    padding: 10px;
+    margin-top: 13px;
+}
+
+#youtube-logo {
+    height: 70px;
+    width: 100px; 
+    margin-left: 15px;
+}
+
+.searchbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    padding-top: 10px;
+}
+
+.searchbar {
+    height: 30px; 
+    width: 100%;
+    border-width: 1px;
+    border-color: #d3d3d3;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    max-width: 565px;
+    padding-left: 10px;
+    margin-left: 0px;
+}
+
+#search-button {
+    height: 30px;
+    width: 60px;
+    margin-right: 60px;
+    background-color: #f8f8f8;
+    border-color: #d3d3dd;
+    border-radius: 2px;
+    border-width: 1px;
+    padding: 0;
+    transition: 0.3s;
+}
+
+#search-icon {
+    height: 15px;
+    width: 30px;
+    padding-left: 14px;
+    background-color: white;
+}
+
+.button-icons {
+    height: 40px;
+    width: 40px;
+    margin-top: 14px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border-width: 0;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.button-icons:active {
+    background-color: #a0a0a0;
+}
+
+#upload-video-icon {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+#grid-icon {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+#more-icon {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+#sign-in-button {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    border-style: solid;
+    border-width: thin;
+    border-color: #065fd4;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #065fd4;
+    margin-top: 12px;
+    margin-left: 5px;
+    height:  40px;
+    width: 120px;
+    background: white;
+}
+
+#sign-in-icon {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: none;
+}
+
+#sign-in-text {
+    margin-left: 10px;
+}
+
+main {
+    display: flex;
+}
+
+.title-section {
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: #cacaca;
+    width: 560px;
+}
+
+#video-title {
+    padding-top: 12px;
+    padding-bottom: 8px;
+}
+
+#stats {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    height: 50px;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
 }
 
-.logo {
-    height: 70px;
-    width: 90px;
+.video-buttons {
+    display: flex;
+    align-items: center;
+    border-width: 0;
+    background: none;
 }
 
-#sign-in {
-    float: right;
-    color: white;
-    border: 0px;
-    border-radius: 2px;
-    background-color: rgb(22, 122, 198);
-}
-
-.fa-bars {
-}
