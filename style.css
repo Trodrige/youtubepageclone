@@ -9,6 +9,11 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.8; 
 }
+
+body, html {
+    height: 100%;
+}
+
 h1 {
     font-size: 1.8rem;
     font-weight: 400;
@@ -24,7 +29,7 @@ button {
     background-color: white;
 }
 
-header {
+/* header {
     display: flex;
     position: fixed;
     width: 100%;
@@ -33,7 +38,7 @@ header {
     background-color: white;
     padding-left: 15px;
     padding-right: 15px;
-}
+} */
 
 img {
     float: left;
@@ -183,3 +188,56 @@ main {
     background: none;
 }
 
+
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 70px 400px 150px 150px 150px 100px;
+    grid-template-areas: 
+        "header header"
+        "main-content aside-content"
+        "title-section aside-content"
+        "description-section aside-content"
+        "comment-section aside-content"
+        "footer footer"
+}
+
+.header {
+    grid-area: header;
+}
+
+.main-content {
+    grid-area: main-content;
+}
+
+.title-section {
+    grid-area: title-section;
+}
+
+.description-section {
+    grid-area: description-section;
+}
+
+.comment-section {
+    grid-area: comment-section;
+}
+
+.aside-content {
+    grid-area: aside-content;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+@media(max-width: 700px) {
+    .container {
+        grid-template-areas: 
+            "main-content main-content"
+            "aside-content aside-content"
+            "aside-content aside-content"
+            "aside-content aside-content"
+            "footer footer"
+    }
+}
