@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 :root {
     box-sizing: border-box;
@@ -29,7 +29,7 @@ button {
     background-color: white;
 }
 
-/* header {
+header {
     display: flex;
     position: fixed;
     width: 100%;
@@ -38,7 +38,7 @@ button {
     background-color: white;
     padding-left: 15px;
     padding-right: 15px;
-} */
+}
 
 img {
     float: left;
@@ -240,4 +240,13 @@ main {
             "aside-content aside-content"
             "footer footer"
     }
+} */
+
+
+
+.button-icons, .video-buttons, 
+.react-buttons, img, .sign-in-icon, 
+#hamburger-icon, #search-icon, #grid-icon, #more-icon  {
+    width: 25px;
+    height: 25px;
 }
