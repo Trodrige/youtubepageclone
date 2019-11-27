@@ -1,4 +1,4 @@
-,<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,20 +15,7 @@
 <body>
     <div class="container">
         <header class="header">
-            <a href="#"><img id="hamburger-icon" src="img/hamburger-icon.jpg" alt="Hamburger Menu"></a>
-    
-            <a href="#"><img id="youtube-logo" src="img/youtube-logo.jpeg" alt="YouTube Logo"></a>
-            <div class = "searchbox">
-                <input class = "searchbar" type="text" placeholder="Search">
-                <button id="search-button" ><img id="search-icon" src="img/search-icon.png" alt="Search Icon"></button>
-            </div>
-            <button class="button-icons"><img id="upload-video-icon" src="img/upload-video-icon.png" alt="Upload Video"></button>
-            <button class="button-icons"><img id="grid-icon" src="img/grid-icon.png" alt="Grid"></button>
-            <button class="button-icons"><img id="more-icon" src="img/more-icon.png" alt="More"></button>
-            <button id="sign-in-button">
-                <img id="sign-in-icon" src="img/sign-in-icon.png" alt="Sign In">
-                <p id="sign-in-text" >Sign In</p>
-            </button>
+           <div class="hamburger-menu"></div>
         </header>
         <main class="main">
             <section class = "main-content">
@@ -46,51 +33,55 @@
                 <div id="stats">
                     <h4>921,570 views &middot; 26 Nov 2018</h4>
                     <button class="video-buttons">
-                        <img class="react-buttons" src="img/thumbs-up-icon.png" alt="Like">
-                        <h4>22K</h4>
+                        <!-- <img class="react-buttons" src="img/thumbs-up-icon.png" alt="Like"> -->
+                        <span><i class="fas fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;<strong>22k</strong></span>
                     </button>
                     <button class="video-buttons">
-                        <img src="img/thumbs-down-icon.png" alt="Dislike">
-                        <h6>643</h6>
+                        <!-- <img src="img/thumbs-down-icon.png" alt="Dislike"> -->
+                        <span><i class="fas fa-thumbs-down fa-2x"></i>&nbsp;&nbsp;<strong>643</strong></span>
                     </button>
                     <button class="video-buttons">
-                        <img src="img/share-button.png" alt="Share">
-                        <h6>SHARE</h6> 
+                        <!-- <img src="img/share-button.png" alt="Share"> -->
+                        <span><i class="fas fa-share fa-2x"></i>&nbsp;&nbsp;<strong>SHARE</strong></span>
                     </button>
                     <button class="video-buttons">
-                        <img src="img/save-icon.png" alt="Save">
-                        <h6>SAVE</h6>
+                        <!-- <img src="img/save-icon.png" alt="Save"> -->
+                        <span><i class="fas fa-share fa-2x"></i>&nbsp;&nbsp;<strong>SAVE</strong></span>
                     </button>
-                    <img src="img/options-icon.png" alt="Options">
+                    <!-- <img src="img/options-icon.png" alt="Options"> -->
+                    <button class="video-buttons">
+                        <!-- <img src="img/save-icon.png" alt="Save"> -->
+                        <span><i class="fas fa-ellipsis-h fa-2x"></i>&nbsp;&nbsp;</span>
+                    </button>
                 </div>
             </section>
             <section class="author-details">
                 <img id="profile-picture" src="img/unnamed.jpg" alt="The author's profile image">
                 <div id="details">
-                    <h4 id="details-name">Income School</h4>
+                    <h4 id="details-name"><b>Income School</b></h4>
                     <h5 id="details-subscribers">50.6K Subscribers</h5>
                 </div>
-                <button id="subscribe">Subscribe</button>
+                <button id="subscribe-button">Subscribe</button>
             </section>
             <section class="description-section">
                 <h3>Published on Feb 27, 2014 </h3>
                 <p>How do you contribute to open source? In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github. I'll also describe what kinds of contributions open source software projects are typically looking for. As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails. You can find more information about that project at http://theodinproject.com.</p>
+                <button id="show-more-button"><strong>SHOW MORE</strong></button>
                 <hr>
-                <button id="show-more-button">SHOW MORE</button>
             </section>
             <section class="comment-section">
                 <div id="comment-info">
-                    <h2 id="total-commentns">2,336 comments</h2>
+                    <h3 id="total-commentns">2,336 comments</h3>&nbsp;&nbsp;&nbsp;&nbsp;
                     <button id="sort-by-button">
-                        <img id="sort-by-icon" src="img/sort-by.png" alt="Sort By">
-                        SORT BY
+                        <!-- <img id="sort-by-icon" src="img/sort-by.png" alt="Sort By"> -->
+                        <span><i class="fas fa-sort-amount-up fa-2x"></i>&nbsp;&nbsp;<strong>SORT BY</strong></span>
                     </button>
                 </div>
                 <div id="add-comment">
                     <img id="comment-profile-image" src="img/unnamed.jpg" alt="Commenter profile image">
-                    <input id="add-comment" type="text" placeholder="Add a public comment...">
+                    <input id="add-comment-input" type="text" placeholder="Add a public comment...">
                 </div>
-            </section>
+            </section><br>
             <section class="all-comments">
                 <div class="comment-container">
                     <img class="commenter-image" src="img/unnamed.jpg" alt="Commenter's image">
@@ -100,11 +91,13 @@
                     <p class="comment-body">This was indeed the video I have been waiting for, and I'm sure a lot of other Project 24 members with me! Thanks for another useful and highly entertaining video, you guys rock 😄👍🏻</p>
                     <div class="comment-reactions">
                         <button class="comment-like">
-                            <img class="comment-thumbs-img" src="img/thumbs-up-icon.png" alt="Like this comment">
+                            <!-- <img class="comment-thumbs-img" src="img/thumbs-up-icon.png" alt="Like this comment"> -->
+                            <span><i class="fas fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;<strong>2345</strong></span>
                         </button>
                         <h6 class="count-comment-likes">45</h6>
                         <button class="comment-like">
-                            <img class="comment-thumbs-img" src="img/thumbs-down-icon.png" alt="Dislike this comment">
+                            <!-- <img class="comment-thumbs-img" src="img/thumbs-down-icon.png" alt="Dislike this comment"> -->
+                            <span><i class="fas fa-thumbs-down fa-2x"></i>&nbsp;&nbsp;<strong>34</strong></span>
                         </button>
                         <h6 class="count-comment-dislikes">6745</h6>
                         <button class="comment-reply">Reply</button>
@@ -147,44 +140,40 @@
                     </div>
                 </div>
             </section>
-            <aside class="aside-content">
-                <div class="next-video">
-                    <h2 id="up-next">Up next </h2>
-                    <h3 class="autoplay">Autoplay </h3>
-                    <div id="autoplay-slider">
-                        <button>Toggle autoplay</button>
-                    </div>
-                </div>
-                <div class="suggested-videos first-suggestion">
-                    <img src="img/suggested-1.webp" alt="Suggested videos">
-                    <h4 class="suggested-videos-title">Braham Lincoln's legacy</h4>
-                    <h5 class="suggested-videos-author">Abraham Lincoln </h5>
-                    <h5 class="suggested-videos-views">1500 views </h5>
-                </div>
-                <div class="suggested-videos">
-                    <img class="thumbnail-suggested-videos" src="img/suggested.webp" alt="Suggested videos">
-                    <h4 class="suggested-videos-title">Braham Lincoln's legacy</h4>
-                    <h5 class="suggested-videos-author">Abraham Lincoln </h5>
-                    <h5 class="suggested-videos-views">1500 views </h5>
-                </div>
-                <div class="suggested-videos">
-                    <img class="thumbnail-suggested-videos" src="img/suggested.webp" alt="Suggested videos">
-                    <h4 class="suggested-videos-title">Braham Lincoln's legacy</h4>
-                    <h5 class="suggested-videos-author">Abraham Lincoln </h5>
-                    <h5 class="suggested-videos-views">1500 views </h5>
-                </div>
-                <div class="suggested-videos">
-                    <img class="thumbnail-suggested-videos" src="img/suggested.webp" alt="Suggested videos">
-                    <h4 class="suggested-videos-title">Braham Lincoln's legacy</h4>
-                    <h5 class="suggested-videos-author">Abraham Lincoln </h5>
-                    <h5 class="suggested-videos-views">1500 views </h5>
-                </div>
-            </aside>
-    
-            <footer class="footer">
-                Footer
-            </footer>
         </main>
+        <aside class="aside-content">
+            <div class="suggested-videos next-video">
+                <h2 id="up-next">Up next </h2>
+                <h3 class="autoplay">Autoplay </h3>
+                <div id="autoplay-slider">
+                    <button>Toggle autoplay</button>
+                </div>
+            </div>
+            <div class="suggested-videos first-suggestion">
+                <img src="img/suggested-1.webp" alt="Suggested videos">
+                <h4 class="suggested-videos-title">Braham Lincoln's legacy</h4>
+                <h5 class="suggested-videos-author">Abraham Lincoln </h5>
+                <h5 class="suggested-videos-views">1500 views </h5>
+            </div>
+            <div class="suggested-videos">
+                <img class="thumbnail-suggested-videos" src="img/suggested.webp" alt="Suggested videos">
+                <h4 class="suggested-videos-title">Braham Lincoln's legacy</h4>
+                <h5 class="suggested-videos-author">Abraham Lincoln </h5>
+                <h5 class="suggested-videos-views">1500 views </h5>
+            </div>
+            <div class="suggested-videos">
+                <img class="thumbnail-suggested-videos" src="img/suggested.webp" alt="Suggested videos">
+                <h4 class="suggested-videos-title">Braham Lincoln's legacy</h4>
+                <h5 class="suggested-videos-author">Abraham Lincoln </h5>
+                <h5 class="suggested-videos-views">1500 views </h5>
+            </div>
+            <div class="suggested-videos">
+                <img class="thumbnail-suggested-videos" src="img/suggested.webp" alt="Suggested videos">
+                <h4 class="suggested-videos-title">Braham Lincoln's legacy</h4>
+                <h5 class="suggested-videos-author">Abraham Lincoln </h5>
+                <h5 class="suggested-videos-views">1500 views </h5>
+            </div>
+        </aside>
     </div>
 </body>
 </html>

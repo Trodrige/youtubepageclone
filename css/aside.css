@@ -1,0 +1,10 @@
+.aside-content {
+    display: flex;
+    border: 10px solid blueviolet;
+    flex-direction: column;
+    margin-right: 500px
+}
+
+.suggested-videos {
+    width: 410px;
+}
