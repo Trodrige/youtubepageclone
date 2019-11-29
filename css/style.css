@@ -56,10 +56,23 @@ nav {
 }
 
 #stats {
+    display: flex;
     margin: 0;
     padding: 0;
     color: #606060;
+    background-color: goldenrod;
+}
+
+.react-buttons {
     display: flex;
+    flex-basis: 400px;
+    justify-content: space-evenly;
+    align-self: flex-end;
+    margin: auto;
+}
+
+.published-date {
+    flex-basis: auto;
 }
 
 i, strong {
