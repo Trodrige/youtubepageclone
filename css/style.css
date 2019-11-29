@@ -49,7 +49,7 @@ nav {
 }
 
 .title-section {
-    display: block;
+    display: flex;
     flex-direction: column;
     border-bottom: thin solid #cacaca;
     border-width: 1px;
@@ -57,22 +57,22 @@ nav {
 
 #stats {
     display: flex;
-    margin: 0;
-    padding: 0;
     color: #606060;
-    background-color: goldenrod;
+    justify-content: center;
+    align-items: center;
 }
 
 .react-buttons {
     display: flex;
     flex-basis: 400px;
     justify-content: space-evenly;
-    align-self: flex-end;
-    margin: auto;
 }
 
 .published-date {
-    flex-basis: auto;
+    display: flex;
+    flex-basis: 300px;
+    justify-self: left;
+    margin-right: auto;
 }
 
 i, strong {
