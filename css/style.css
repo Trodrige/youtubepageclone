@@ -25,6 +25,7 @@ nav {
     height: 25px;
 }
 
+/* The main container */
 .container {
     position: absolute;
     top: 50px;
@@ -35,8 +36,6 @@ nav {
 
 @media(min-width: 1500px) {
     .container {
-        /* align-content: center; */
-        /* justify-content: center; */
         margin-right: 20%;
         margin-left: 20%;
     }
@@ -46,9 +45,7 @@ nav {
     display: flex;
     border: 20px solid white;
     flex-direction: column;
-    /* margin-left: 20%; */
 }
-
 
 .title-section {
     display: block;
@@ -74,7 +71,6 @@ i, strong {
     flex:1;
 }
 
-
 .author-details {
     margin-top: 0px;
     display: flex;
@@ -90,11 +86,15 @@ i, strong {
     margin-bottom: -15px;
 }
 
-#details-subscribers, #show-more-button {
+#show-more-button,
+#details-subscribers {
     color: #606060;
 }
-
-#show-more-button, #sort-by-button, .comment-reply, .comment-like {
+ 
+.comment-like,
+.comment-reply, 
+#sort-by-button, 
+#show-more-button {
     border: none;
     background-color: none;
 }
@@ -121,13 +121,15 @@ img {
     float: left;
 }
 
-#profile-picture, #comment-profile-image, .commenter-image {
+
+.commenter-image,
+#profile-picture, 
+#comment-profile-image {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-right: 15px;
 }
-
 
 #comment-info {
     display: flex;
@@ -165,6 +167,7 @@ img {
     margin-top: -12px;
 }
 
-.comment-body, .comment-reactions {
+.comment-body, 
+.comment-reactions {
     margin-left: 50px;
 }
