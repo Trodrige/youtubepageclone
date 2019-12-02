@@ -54,7 +54,7 @@ img {
     height: 100px;
 }
 
-.suggested-videos>p, .suggested-videos>b>h4 {
+.suggested-videos>p, .suggested-videos>h4 {
     margin-top: -2px;
 }
 

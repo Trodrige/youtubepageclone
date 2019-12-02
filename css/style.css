@@ -48,6 +48,10 @@ nav {
     flex-direction: column;
 }
 
+iframe {
+    border: 0;
+}
+
 .title-section {
     display: flex;
     flex-direction: column;
