@@ -48,7 +48,8 @@
 }
 
 #search-icon {
-  height: 15px;
+  height: 80%;
+  width: 80%;
   opacity: 0.5;
   margin: 0;
   padding: 0;
