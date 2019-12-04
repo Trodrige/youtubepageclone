@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Youtube Page Clone</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/aside.css">
+   <link rel="stylesheet" href="css/footer.css">
+   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2eec168e29.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="hamburger-menu">
+            <a href="#"><img src="img/hamburger-icon.jpg" alt="Hamburger Icon" id="hamburger-icon"></a>
+        </div>
+        <div class="logo-wrapper">
+            <a href="#"><img src="img/youtube-logo.jpeg" alt="YouTubeLogo" id="youtube-logo"></a>
+        </div>
+        <div class="searchbox-wrapper">
+            <input type="text" id="searchbar">
+            <button class="search-button">
+                <img src="img/search-icon.png" alt="Search Icon" id="search-icon">
+            </button>
+        </div>
+        <div class="icon-space">
+            <button class="icon-space-button">
+                <img src="img/upload-video-icon.png" alt="Upload Video" id="upload-video-icon">
+            </button>
+            <button class="icon-space-button">
+                <img src="img/grid-icon.png" alt="Grid Icon" id="grid-icon">
+            </button>
+            <button class="icon-space-button">
+                <img src="img/options-icon.png" alt="Options Icon" id="options-icon">
+            </button>
+            <button class="sign-in">
+                <img src="img/sign-in-icon.png" alt="Sign In" id="sign-in-icon">
+                SIGN IN
+            </button>
+        </div>
+    </nav>   
+    <div class="container">
+        <main class="main">
+            <div class = "main-content">
+                    <iframe 
+                    width="800" 
+                    height="400" 
+                    src="https://www.youtube.com/embed/y5SzS6z_I1I" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <section class="title-section">
+                <h1 id="video-title">Random Videos #3</h1>
+                <div id="stats">
+                    <div class="published-date">
+                        <h4>921,570 views &middot; 26 Nov 2018</h4>
+                    </div>
+                    <div class="reaction-buttons">
+                        <button class="video-buttons">
+                            <span><i class="fas fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;<strong>22k</strong></span>
+                        </button>
+                        <button class="video-buttons">
+                            <span><i class="fas fa-thumbs-down fa-2x"></i>&nbsp;&nbsp;<strong>643</strong></span>
+                        </button>
+                        <button class="video-buttons">
+                            <span><i class="fas fa-share fa-2x"></i>&nbsp;&nbsp;<strong>SHARE</strong></span>
+                        </button>
+                        <button class="video-buttons">
+                            <span><i class="fas fa-share fa-2x"></i>&nbsp;&nbsp;<strong>SAVE</strong></span>
+                        </button>
+                        <button class="video-buttons">
+                            <span><i class="fas fa-ellipsis-h fa-2x"></i>&nbsp;&nbsp;</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="author-details">
+                <img id="profile-picture" src="img/unnamed.jpg" alt="The author's profile image">
+                <div id="details">
+                    <h4 id="details-name"><b>Income School</b></h4>
+                    <h5 id="details-subscribers">50.6K Subscribers</h5>
+                </div>
+                <button id="subscribe-button">Subscribe</button>
+            </section>
+            <section class="description-section">
+                <h3>Published on Feb 27, 2014 </h3>
+                <p>How do you contribute to open source? In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github. I'll also describe what kinds of contributions open source software projects are typically looking for. As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails. You can find more information about that project at http://theodinproject.com.</p>
+                <button id="show-more-button"><strong>SHOW MORE</strong></button>
+            </section>
+            <section class="comment-section">
+                <hr>
+                <div id="comment-info">
+                    <h3 id="total-commentns">2,336 comments</h3>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button id="sort-by-button">
+                        <span><i class="fas fa-sort-amount-up fa-2x"></i>&nbsp;&nbsp;<strong>SORT BY</strong></span>
+                    </button>
+                </div>
+                <div id="add-comment">
+                    <img id="comment-profile-image" src="img/unnamed.jpg" alt="Commenter profile image">
+                    <input id="add-comment-input" type="text" placeholder="Add a public comment...">
+                </div>
+            </section><br>
+            <section class="all-comments">
+                <div class="comment-container">
+                    <img class="commenter-image" src="img/unnamed.jpg" alt="Commenter's image">
+                    <h5 class="user-name">
+                        <strong>Babylon</strong> 29 years ago
+                    </h5>
+                    <p class="comment-body">This was indeed the video I have been waiting for, and I'm sure a lot of other Project 24 members with me! Thanks for another useful and highly entertaining video, you guys rock 😄👍🏻</p>
+                    <div class="comment-reactions">
+                        <button class="comment-like">
+                            <span><i class="fas fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;<strong>2345</strong></span>
+                        </button>
+                        <button class="comment-like">
+                            <span><i class="fas fa-thumbs-down fa-2x"></i>&nbsp;&nbsp;<strong>34</strong></span>
+                        </button>
+                        <button class="comment-reply"><strong>REPLY</strong></button>
+                    </div>
+                </div>
+                <div class="comment-container">
+                    <img class="commenter-image" src="img/unnamed.jpg" alt="Commenter's image">
+                    <h5 class="user-name">
+                        <strong>Babylon</strong> 29 years ago
+                    </h5>
+                    <p class="comment-body">This was indeed the video I have been waiting for, and I'm sure a lot of other Project 24 members with me! Thanks for another useful and highly entertaining video, you guys rock 😄👍🏻</p>
+                    <div class="comment-reactions">
+                        <button class="comment-like">
+                            <span><i class="fas fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;<strong>2345</strong></span>
+                        </button>
+                        <button class="comment-like">
+                            <span><i class="fas fa-thumbs-down fa-2x"></i>&nbsp;&nbsp;<strong>34</strong></span>
+                        </button>
+                        <button class="comment-reply"><strong>REPLY</strong></button>
+                    </div>
+                </div>
+                <div class="comment-container">
+                    <img class="commenter-image" src="img/unnamed.jpg" alt="Commenter's image">
+                    <h5 class="user-name">
+                        <strong>Babylon</strong> 29 years ago
+                    </h5>
+                    <p class="comment-body">This was indeed the video I have been waiting for, and I'm sure a lot of other Project 24 members with me! Thanks for another useful and highly entertaining video, you guys rock 😄👍🏻</p>
+                    <div class="comment-reactions">
+                        <button class="comment-like">
+                            <span><i class="fas fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;<strong>2345</strong></span>
+                        </button> 
+                        <button class="comment-like">
+                            <span><i class="fas fa-thumbs-down fa-2x"></i>&nbsp;&nbsp;<strong>34</strong></span>
+                        </button>
+                        <button class="comment-reply"><strong>REPLY</strong></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <aside class="aside-content">
+            <div class="next-video">
+                <h2 id="up-next">Up next </h2>
+                <h3 class="autoplay">Autoplay </h3>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="suggested-videos first-suggestion">
+                <img src="img/suggested-1.webp" alt="Suggested videos">
+                <h4 class="suggested-videos-title"><b>Braham Lincoln's legacy</b></h4>
+                <p class="suggested-videos-author">Abraham Lincoln </p>
+                <p class="suggested-videos-views">1500 views </p>
+            </div>
+            <div class="suggested-videos">
+                <img class="thumbnail-suggested-videos" src="img/suggested.webp" alt="Suggested videos">
+                <h4 class="suggested-videos-title"><b>Braham Lincoln's legacy</b></h4>
+                <p class="suggested-videos-author">Abraham Lincoln </p>
+                <p class="suggested-videos-views">1500 views </p>
+            </div>
+            <div class="suggested-videos">
+                <img class="thumbnail-suggested-videos" src="img/suggested.webp" alt="Suggested videos">
+                <h4 class="suggested-videos-title"><b>Braham Lincoln's legacy</b></h4>
+                <p class="suggested-videos-author">Abraham Lincoln </p>
+                <p class="suggested-videos-views">1500 views </p>
+            </div>
+            <div class="suggested-videos">
+                <img class="thumbnail-suggested-videos" src="img/suggested.webp" alt="Suggested videos">
+                <h4 class="suggested-videos-title"><b>Braham Lincoln's legacy</b></h4>
+                <p class="suggested-videos-author">Abraham Lincoln </p>
+                <p class="suggested-videos-views">1500 views </p>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
